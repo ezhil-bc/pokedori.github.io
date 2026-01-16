@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="include/css/style.css">
+	<link rel="icon" href="img/pokedori.png" alt="Logo PokeDori">
+	<title>POKEDORI</title>
+</head>
+
+<body>
+	<header>
+		<a id="haut"></a>	<!--crée un point d'ancrage-->
+
+		<nav>
+			<a href="index.html" id="nocss"><img src="img/pokedori.png" alt="Logo PokeDori" id="logo"></a>
+			<ul id="barre">
+				<li><a href="index.html">Accueil</a></li>
+				<li id="deroulant"><a href="#">Pokémons par types</a>
+					<ul id="liste-types"></ul>
+				</li>
+				<li><a href="tdt.html">Table des types</a></li>
+				<li><input type="text" placeholder="Rechercher..." id="search"></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="practical">
+		<!--bouton qui  amène en bas de page-->
+		<button id="btn_vers_bas"><a href="#bas"><img alt="Flèche Bas" src="img/bas_arrow.png" /></a></button>
+	</div>
+
+	<main>
+		<h1>Liste de Pokemons</h1>
+		<div id="liste-pokemon"></div>
+		<button id="plus"><img alt="Boutton Plus" src="img/plus.png"/></button>
+	</main>
+
+	<div id="btn_vers_haut">
+		<button><a href="#haut"><img alt="Flèche haut"src="img/arrow.png"/></a></button>
+	</div>
+
+	<footer>
+		<!-- Formulaire de bas de page-->
+			<form>
+            <fieldset>
+                <legend>Donnez nous votre avis !</legend>
+                <table>
+                    <tr>
+                        <td><label>Adresse électronique</label></td>
+                        <td><input type="text" id="mail" placeholder="sacha@hotmail.fr"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label>Niveau de satisfaction du site :</label></td>
+                        <td><input type="range" id="nivsatisfaction"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label>Un commentaire : </label></td>
+                        <td><input type="text" id="commentaire" placeholder="..."></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <input type="submit" id="validerform" value="Envoyer">
+                        </td>
+                    </tr>
+                </table>
+				<p id="message"></p>
+            </fieldset>
+        </form>
+		
+		<p id="auteurs"> LEGRAND Shanice - CHANDON Madeleine - COUDRAY Mathieu - BOES-COSTA Emilie</p>
+
+    	<script src="include/js/data.js" defer></script>
+	<script src="include/js/main.js" defer></script>
+		
+		<a id="bas"></a>	<!--crée un point d'ancrage-->
+	</footer>
+</body>
+</html>
