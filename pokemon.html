@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="include/css/style.css">
+	<link rel="icon" href="img/pokedori.png" alt="Logo PokeDori">
+	<title>POKEDORI | </title>
+	<script src="include/js/data.js" defer></script>
+	<script src="include/js/pokemon.js" defer></script>
+</head>
+
+<body>
+
+	<header>
+		<a id="haut"></a>	<!--crée un point d'ancrage-->
+
+		<nav>
+			<a href="index.html" id="nocss"><img src="img/pokedori.png" alt="Logo PokeDori" id="logo"></a>
+			<ul id="barre">
+				<li><a href="index.html">Accueil</a></li>
+				<li id="deroulant"><a href="#">Pokémons par types</a>
+					<ul id="liste-types"></ul>
+				</li>
+				<li><a href="tdt.html">Table des types</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="practical">
+		<!--bouton qui  amène en bas de page-->
+		<button id="btn_vers_bas"><a href="#bas"><img alt="Flèche bas" src="img/bas_arrow.png"/></a></button>
+
+		<!--bouton d'accessibilité pour les personnes dyslexiques-->
+		<span id="dys">Accessibilité Dyslexique</span>
+		<input type="checkbox" id="toggle" />
+		<label for="toggle" ></label>
+	</div>
+
+	<main>
+		<div id="titre">					<!--nom et image du pokemon-->
+			<h1><img height="100px"></h1>
+		</div>
+
+		<div id="tout">
+			<div id="informations">
+				<p id="description"></p>
+				<p id="evolutions"></p>
+				<p>Galerie : </p> 			<!-- ajout galerie avec deux images-->
+				<div id="galerie">
+					<div id="carte1"> <img height="300px"></div>
+					<div id="carte2"> <img height="300px"></div>
+				</div>
+			</div>
+			<div id="fiche">
+				<aside> 					<!-- ajout d'une fiche sur le côté-->
+					<p id="identite"></p>
+					<audio controls></audio>
+					<div id="image">
+						<img height="200px">
+					</div>
+					<ul>
+						<li id="nom_en"></li>
+						<li id="nom_ja"></li>
+						<li id="taille"></li>
+						<li id="poids"></li>
+						<li id="types"></li>
+					</ul>
+				</aside>
+			</div>
+		</div>
+	</main>
+
+	<!--bouton qui ramène en haut de page-->
+	<button id="btn_vers_haut"><a href="#haut"><img alt="Flèche haut" src="img/arrow.png"/></a></button>
+
+	<footer>
+		<!-- Formulaire de bas de page-->
+		<form>
+			<fieldset>
+				<legend>Donnez nous votre avis !</legend>
+				<table>
+					<tr>
+						<td><label>Adresse électronique</label></td>
+						<td><input type="text" id="mail" placeholder="sacha@hotmail.fr"></td>
+
+					</tr>
+					<tr>
+						<td><label>Niveau de satisfaction du site :</label></td>
+						<td><input type="range" id="nivsatisfaction"></td>
+
+					</tr>
+					<tr>
+						<td><label>Un commentaire : </label></td>
+						<td><input type="text" id="commentaire" placeholder="..."></td>
+					</tr>
+					<tr>
+						<td>
+							<br>
+							<input type="submit" id="validerform" value="Envoyer">
+						</td>
+					</tr>
+				</table>
+				<p id="message"></p>
+			</fieldset>
+		</form>
+
+		<p id="auteurs"> LEGRAND Shanice - CHANDON Madeleine - COUDRAY Mathieu - BOES-COSTA Emilie</p>
+
+		<a id="bas"></a>	<!--crée un point d'ancrage-->
+	</footer>
+</body>
+</html>
